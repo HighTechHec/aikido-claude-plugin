@@ -7,7 +7,7 @@ Brings [Aikido Security](https://aikido.dev) scanning directly into Claude Code.
 | Skill | Command | Description |
 |---|---|---|
 | Scan | `/aikido:scan` | Scans modified or new files for security issues, applies fixes, and re-scans until clean |
-| Setup | `/aikido:setup` | Verifies the plugin is configured and walks through API key setup if not |
+| Setup | `/aikido:setup [api-key]` | Verifies the plugin is configured and walks through API key setup if not. Pass your API key as an argument to configure it automatically. |
 
 ## Requirements
 
@@ -16,15 +16,21 @@ Brings [Aikido Security](https://aikido.dev) scanning directly into Claude Code.
 
 ## Installation
 
-Install the plugin from the Claude Code marketplace, then set your API key:
+Install the plugin from the Claude Code marketplace, then run the setup skill with your API key:
+
+```
+/aikido:setup your-key-here
+```
+
+This saves the key to your Claude Code user settings and registers the MCP server automatically. Restart Claude Code afterwards for the changes to take effect.
+
+Alternatively, set the key as an environment variable and restart Claude Code:
 
 ```bash
 export AIKIDO_API_KEY="your-key-here"
 ```
 
-To persist it, add the line above to your shell profile (`~/.zshrc`, `~/.bashrc`, etc.) and restart Claude Code.
-
-Run `/aikido:setup` to verify everything is working.
+Run `/aikido:setup` (without a key) at any time to verify your configuration is working.
 
 ## More information
 
