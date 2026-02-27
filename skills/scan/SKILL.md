@@ -1,5 +1,5 @@
 ---
-name: aikido-scan
+name: scan
 description: Runs an Aikido security scan on generated, added, or modified code files to detect SAST vulnerabilities and exposed secrets. Use when the user wants to scan code for security issues, after writing or modifying code, or when they mention Aikido, security scan, or SAST.
 ---
 

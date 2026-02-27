@@ -1,5 +1,5 @@
 ---
-name: aikido-setup
+name: setup
 description: Configures the Aikido plugin by setting up the API key and verifying the MCP server. Accepts an optional API key argument to configure automatically. Use when the user wants to set up or verify the Aikido plugin, after installing it, or when aikido_full_scan fails or is unavailable.
 arguments:
   - name: aikido-api-key
