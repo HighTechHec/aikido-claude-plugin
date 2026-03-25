@@ -11,7 +11,7 @@ Brings [Aikido Security](https://aikido.dev) scanning directly into Claude Code.
 
 ## Requirements
 
-- Node.js 18+
+- Node.js 18.19.0+
 - An Aikido API key — get one at [app.aikido.dev](https://app.aikido.dev) → Settings → Integrations → IDE Plugins
 
 ## Installation

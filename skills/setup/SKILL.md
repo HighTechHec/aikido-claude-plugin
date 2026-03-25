@@ -9,6 +9,14 @@ arguments:
 
 When helping the user configure the Aikido security plugin:
 
+## First: Verify Node.js version
+
+Before doing anything else, run `node --version` to check the installed Node.js version.
+
+- If Node.js is not installed or the command fails, stop and tell the user that Node.js 18.19.0 or higher is required to run the Aikido MCP server, and direct them to https://nodejs.org to install it.
+- If the version is below 18.19.0, stop and tell the user that the Aikido MCP server requires Node.js 18.19.0 or higher, show the currently installed version, and direct them to https://nodejs.org to upgrade.
+- If the version is 18.19.0 or higher, proceed with the steps below.
+
 ## If the user provided an API key as an argument:
 
 1. Read `~/.claude/settings.json` (create it as `{}` if it doesn't exist).
